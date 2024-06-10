@@ -1,15 +1,18 @@
 .About {
   color: #fff;
   padding: 0 100px;
-  h2 {
-    text-align: center;
-    padding: 50px;
-  }
+
   &__main {
     min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      text-align: center;
+    }
   }
   &__faqs {
     min-height: 100vh;
@@ -34,7 +37,6 @@
     background: rgb(18, 18, 18, 70%);
     padding: 20px;
     height: auto;
-    width: 900px;
     text-align: justify;
     animation-name: fadeDown;
     animation-duration: 1s;

@@ -1,15 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useSelector } from "react-redux";
 import { getFAQ } from "../../features/faqSlice/faqSlice";
-import "./About.scss";
 import Translate from "../../i18n/Translate";
+import "./About.scss";
 
 export default function About() {
   const faq = useSelector(getFAQ);
   return (
     <div className="About">
-      <h2 className="About__title">{Translate("AboutUs")}</h2>
       <div className="About__main">
+        <h2 className="About__title">{Translate("AboutUs")}</h2>
         <div className="About__content">
           <p>{Translate("AboutUs1")}</p>
           <img src="./images/bugatti.png" alt="" />
