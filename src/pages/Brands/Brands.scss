@@ -1,0 +1,80 @@
+.Brands {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    div {
+      user-select: none;
+      border: none;
+      width: 400px;
+      height: 200px;
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      transition: 0.5s all;
+      overflow: hidden;
+
+      &:hover {
+        scale: 1.07;
+      }
+      h2 {
+        z-index: 1;
+        letter-spacing: 6px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-400px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes glowEffect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(350deg);
+  }
+}

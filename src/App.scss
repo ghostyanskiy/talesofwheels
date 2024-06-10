@@ -1,0 +1,65 @@
+.App {
+  position: relative;
+  overflow-x: hidden;
+
+  &__background-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__language {
+    position: fixed;
+    top: 0.2%;
+    left: 2%;
+    z-index: 9999;
+    #language {
+      text-align: center;
+      border: none;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      option {
+        background: black;
+      }
+    }
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+.scroll-to-top.visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all;
+  &:hover {
+    scale: 1.1;
+  }
+}

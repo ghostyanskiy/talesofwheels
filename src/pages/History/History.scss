@@ -1,0 +1,72 @@
+.History {
+  padding: 100px 0;
+  min-height: 100vh;
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  &__content {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    h2 {
+      width: 500px;
+      padding: 14px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 10px;
+      img {
+        width: 700px;
+        z-index: 1;
+      }
+      button {
+        background: rgb(19 19 19 / 60%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -3%;
+        bottom: 40%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border: none;
+        svg {
+          color: white;
+          width: 40px !important;
+          height: 40px !important;
+        }
+      }
+    }
+    p {
+      transition: opacity 0.5s ease-in-out;
+      padding: 14px;
+      width: 1000px;
+      text-align: justify;
+      background: rgb(19 19 19);
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .History {
+    &__content {
+      gap: 20px;
+      h2 {
+        width: 350px;
+        height: 170px;
+        font-size: 16px;
+      }
+      p {
+        width: 800px;
+        font-size: 12px;
+      }
+    }
+  }
+}

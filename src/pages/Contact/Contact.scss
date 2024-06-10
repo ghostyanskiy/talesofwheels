@@ -1,0 +1,64 @@
+.Contact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  h2 {
+    text-align: center;
+    font-size: 60px;
+  }
+  &__ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    li {
+      padding: 20px;
+      width: 480px;
+      background-color: #121212;
+      position: relative;
+      h2 {
+        padding: 24px 30px;
+        font-size: 20px;
+        text-align: left;
+      }
+      span {
+        position: absolute;
+        left: 0;
+        top: 22%;
+        background-color: #af8260;
+        width: 4px;
+        height: 30px;
+      }
+      p {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: translateY(-30px) scale(0.5);
+  }
+  to {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .Contact {
+    h2 {
+      font-size: 30px;
+    }
+    li {
+      width: 280px;
+      h2 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
